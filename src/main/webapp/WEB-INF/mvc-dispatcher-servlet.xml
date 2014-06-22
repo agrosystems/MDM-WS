@@ -19,7 +19,7 @@
      http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
     <mvc:annotation-driven />
-    <context:component-scan base-package="com.intelesant"/>
+    <context:component-scan base-package="com.agro"/>
     
     <beans:bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -32,9 +32,4 @@
     </beans:bean>
     
     <beans:import resource="application-context.xml" />
-<!--    <beans:import resource="transfer-service-config.xml" />
-    <beans:import resource="spring-sender.xml" />
-    <beans:import resource="Spring-Quartz.xml" />-->
-    
-    <!--     <beans:import resource="spring-gmailsender.xml" />-->
 </beans:beans>

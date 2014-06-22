@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.rbt.dto;
+package com.agro.user.dto;
 
 import java.io.Serializable;
 

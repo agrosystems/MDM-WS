@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.intelesant.mail.controller;
+package com.agro.mdm.controller;
 
-import com.rbt.dto.UserDetailsDTO;
+import com.agro.user.dto.UserDetailsDTO;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
