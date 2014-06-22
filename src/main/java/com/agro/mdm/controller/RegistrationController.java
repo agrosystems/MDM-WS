@@ -5,7 +5,6 @@
 package com.agro.mdm.controller;
 
 import com.agro.user.dto.UserDetailsDTO;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,10 +20,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/user")
 public class RegistrationController {
 
-    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    @RequestMapping(value = "/register", method = RequestMethod.GET,params="dTO")
     @Transactional
     public @ResponseBody
-    String addMessageToQueue(UserDetailsDTO dTO) {
+    String addMessageToQueue(@RequestBody UserDetailsDTO dTO) {
         System.out.println("::::::::::::::"+dTO);
         return dTO.toString();
 
