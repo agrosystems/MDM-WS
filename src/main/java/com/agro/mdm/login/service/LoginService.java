@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 public class LoginService {
 
     public String validateUser(UserAccountDTO accountDTO) {
-        if (accountDTO.getUserName().equals("user") && accountDTO.getPassword().equals("password")) {
+        if (accountDTO.getUserName().equals("user@agro.com") && accountDTO.getPassword().equals("password")) {
             return "SUCCESS";
         } else {
             throw new LoginFailedException("LoginFailedException");
