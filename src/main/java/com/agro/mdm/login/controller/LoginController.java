@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package com.agro.mdm.login.controller;
 
 import com.agro.mdm.login.service.LoginService;
@@ -19,18 +18,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  *
- * @author RAMU-VB  
+ * @author RAMU-VB
  */
 @Controller
 @RequestMapping("/userLogin")
 public class LoginController {
+
     @Autowired
     LoginService loginService;
-     @RequestMapping(value = "/validateUser", method = RequestMethod.POST)
+
+    @RequestMapping(value = "/validateUser", method = RequestMethod.POST)
     @Transactional
     public @ResponseBody
-    String addMessageToQueue(UserAccountDTO dTO) {
-        System.out.println("::::::::::::::"+dTO);
+    String addMessageToQueue(@RequestBody UserAccountDTO dTO) {
+        System.out.println("::::::::::::::" + dTO.toString());
         return loginService.validateUser(dTO);
     }
 }

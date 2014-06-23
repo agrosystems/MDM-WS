@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package com.agro.mdm.userAccount.dto;
 
 import java.io.Serializable;
@@ -12,7 +11,8 @@ import java.io.Serializable;
  *
  * @author RAMU-VB
  */
-public class UserAccountDTO implements Serializable{
+public class UserAccountDTO implements Serializable {
+
     private String userId;
     private String userName;
     private String password;
@@ -58,5 +58,10 @@ public class UserAccountDTO implements Serializable{
     public void setNumberOfAttempts(Integer numberOfAttempts) {
         this.numberOfAttempts = numberOfAttempts;
     }
-    
+
+    @Override
+    public String toString() {
+        return "UserAccountDTO{" + "userId=" + userId + ", userName=" + userName + ", password=" + password + ", active=" + active + ", numberOfAttempts=" + numberOfAttempts + '}';
+    }
+
 }
