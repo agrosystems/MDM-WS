@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/user")
 public class RegistrationController {
 
-    @RequestMapping(value = "/register", method = RequestMethod.GET,params="dTO")
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     @Transactional
     public @ResponseBody
     String addMessageToQueue(@RequestBody UserDetailsDTO dTO) {

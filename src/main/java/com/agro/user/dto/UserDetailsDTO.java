@@ -5,13 +5,11 @@
  */
 package com.agro.user.dto;
 
-import java.io.Serializable;
-
 /**
  *
  * @author ramulu
  */
-public class UserDetailsDTO implements  Serializable{
+public class UserDetailsDTO {
 
     private String name;
     private String fatherName;
@@ -57,6 +55,5 @@ public class UserDetailsDTO implements  Serializable{
     public String toString() {
         return "UserDetailsDTO{" + "name=" + name + ", fatherName=" + fatherName + ", age=" + age + ", address=" + address + '}';
     }
-
 
 }
